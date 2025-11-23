@@ -1,0 +1,15 @@
+<!--when we are creating an application one screen is called as an activity, An activity contains 2 files. The UI file(written in xml) and the
+Interaction file(written in kotlin -->
+
+
+<resources>
+    <string name="app_name">Tutorial_04_Calculator</string>
+    <string name="label_Number1">Number 01</string>
+    <string name="label_Number2">Number 02</string>
+    <string name="edt_Number1">23</string>
+    <string name="edt_Number2">12</string>
+    <string name="btn_Plus">+</string>
+    <string name="btn_Minus">-</string>
+    <string name="btn_Multiply">x</string>
+    <string name="btn_Divide">/</string>
+</resources>

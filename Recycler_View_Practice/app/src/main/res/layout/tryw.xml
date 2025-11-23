@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:weightSum="10">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:clipToOutline="true"
+            android:contentDescription="Profile image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <!-- Text Section -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User description goes here. This is a sample text."
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:ellipsize="end"
+                android:maxLines="2" />
+        </LinearLayout>
+
+        <!-- Right Section (fixed height + scroll if needed) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="4dp">
+
+            <!-- Static Icon -->
+            <ImageView
+                android:id="@+id/imgUserIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="6dp"
+                android:contentDescription="User icon"
+                android:src="@drawable/user_icon" />
+
+            <!-- Open Button -->
+            <Button
+                android:id="@+id/btnOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open"
+                android:textSize="12sp"
+                android:minHeight="36dp"
+                android:paddingHorizontal="8dp"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Dynamic Button (User Name) -->
+            <Button
+                android:id="@+id/btnUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Button"
+                android:textSize="12sp"
+                android:minHeight="36dp"
+                android:paddingHorizontal="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

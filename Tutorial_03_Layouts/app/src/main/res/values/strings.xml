@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tutorial_03_Layouts</string>
+
+    <string name="hntName">Enter Name</string>
+    <string name="btnWelcome">ආයුබෝවන්</string>
+    <string name="btnGoodBye">Good Bye</string>
+
+    <string name="msg1">ආයුබෝවන්</string>
+    <string name="msg2">Good Bye</string>
+</resources>
